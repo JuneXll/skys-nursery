@@ -1,26 +1,54 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+// Styles
 import './App.css';
+// Sections
+import Home from './components/sections/Home';
+import About from './components/sections/About';
+import Inventory from './components/sections/Inventory';
+import Delivery from './components/sections/Delivery';
+import Contact from './components/sections/Contact';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import NotFound from './components/sections/NotFound';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation/>
+        <Container>
+        <Router>
+          <Switch>
+              <Container>
+                {/* Main Pages */}
+                <Route exact path='/' element={<Home/>}/>
+                <Route exact path='/about-us' element={<About/>}/>
+                <Route exact path='/inventory' element={<Inventory/>}/>
+                <Route exact path='/delivery' element={<Delivery/>}/>
+                <Route exact path='/contact-us' element={<Contact/>}/>
+              </Container>
+              <Route path='*' element={<NotFound/>}/>
+          </Switch>
+        </Router> 
+        </Container>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
+
+// {/* <Router>
+//           <Switch>
+//               <Container>
+//                 {/* Main Pages */}
+//                 <Route exact path='/' element={<Home/>}/>
+//                 <Route exact path='/about-us' element={<About/>}/>
+//                 <Route exact path='/inventory' element={<Inventory/>}/>
+//                 <Route exact path='/delivery' element={<Delivery/>}/>
+//                 <Route exact path='/contact-us' element={<Contact/>}/>
+//               </Container>
+//               <Route path='*' element={<NotFound/>}/>
+//           </Switch>
+//         </Router>  */}
