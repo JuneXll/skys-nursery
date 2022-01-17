@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 // Styles
 import './App.css';
@@ -11,26 +11,18 @@ import Delivery from './components/sections/Delivery';
 import Contact from './components/sections/Contact';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import NotFound from './components/sections/NotFound';
+// import NotFound from './components/sections/NotFound';
 
 function App() {
   return (
     <div className="App">
       <Navigation/>
         <Container>
-        <Router>
-          <Switch>
-              <Container>
-                {/* Main Pages */}
-                <Route exact path='/' element={<Home/>}/>
-                <Route exact path='/about-us' element={<About/>}/>
-                <Route exact path='/inventory' element={<Inventory/>}/>
-                <Route exact path='/delivery' element={<Delivery/>}/>
-                <Route exact path='/contact-us' element={<Contact/>}/>
-              </Container>
-              <Route path='*' element={<NotFound/>}/>
-          </Switch>
-        </Router> 
+          <Home/>
+          <About/>
+          <Inventory/>
+          <Delivery/>
+          <Contact/>
         </Container>
       <Footer/>
     </div>
