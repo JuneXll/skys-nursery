@@ -1,4 +1,4 @@
-/* Navigation */
+/* Navigation Styles*/
 .nav-bar {
   background-color: #81a969;
   opacity: 95%;
@@ -9,31 +9,57 @@
   width: 50px;
   height: 50px;
 }
-
+/* Sets color for dropdown globe and link colors */
 a.dropdown-toggle.nav-link,
 a.nav-link {
   color: #f8f9f0;
 }
-
+/*Collapsed button color change on hover*/
+button.navbar-toggler.collapsed:hover {
+  color: #f8f9f0;
+}
+/* Text decoration when nav links are clicked */
 a.nav-link:active {
   text-decoration: underline;
   color: #4b1615;
   padding-bottom: 0.25rem;
 }
-
+/* Text decoration when nav links are hovered */
 a.nav-link:hover {
   text-decoration: underline;
   color: #4b1615;
   padding-bottom: 0.25rem;
 }
-
+/* Decoration when hovering over dropdown item */
 a.dropdown-item:hover {
   background-color: #d8bf9f;
 }
-
+/* Decoration when dropdown item is clicked */
 a.dropdown-item:active {
   background-color: #32620e;
   color: white;
+}
+
+/* Home-cover */
+.cover {
+  background-color: #81a969;
+  padding: 4rem;
+}
+
+.cover-logo {
+  width: 65%;
+  height: 65%;
+}
+
+/* About Us Section */
+.about-div {
+  margin: 4rem;
+  height: 100vh;
+}
+
+.plant-icon-img {
+  width: 100%;
+  height: 100%;
 }
 
 /* .App {
