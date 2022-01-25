@@ -36,7 +36,7 @@ const Navigation = () => {
     return (
     
         <Navbar expand='md' fixed='top' className="nav-bar">
-            <Navbar.Brand href='#home' className='d-line my-1 mx-2' aria-labelledby="Sky's Plant Nursery">
+            <Navbar.Brand href='#home' className='d-line my-1 mx-3' aria-labelledby="Sky's Plant Nursery">
                     <img src={logo} className="nav-logo" alt="Sky's Plant Nursery Logo"></img>
                 </Navbar.Brand>
             <Navbar.Toggle aria-controls='navbarScroll'/>
