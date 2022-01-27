@@ -74,7 +74,8 @@ table {
 
 .my-custom-scrollbar {
   position: relative;
-  height: 200px;
+  height: 60%;
+  width: 60%;
   overflow: auto;
 }
 .table-wrapper-scroll-y {
