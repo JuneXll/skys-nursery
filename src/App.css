@@ -82,6 +82,54 @@ table {
   display: block;
 }
 
+/* Delivery Area Section */
+.delivery-div {
+  height: 100vh;
+  background-color: #81a969;
+}
+
+.delivery-areas {
+  line-height: 3rem;
+  color: #f8f9f0;
+}
+
+/* Contact Us Section */
+.contact-div {
+  height: 100vh;
+  background-color: #32620e;
+  color: #f8f9f0;
+}
+
+.plant-lineup-img {
+  width: 90%;
+  height: 100%;
+}
+
+.contact-details > h2,
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Contact Form Styles */
+input.form-control,
+textarea.form-control {
+  background-color: #f8f9f0;
+}
+
+.submit-btn {
+  background-color: #f8f9f0;
+  color: #4b1615;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: #4b1615;
+  color: #f8f9f0;
+  border: none;
+  border-radius: 5px;
+}
+
 /* .App {
   text-align: center;
 }
