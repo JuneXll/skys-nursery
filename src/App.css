@@ -130,6 +130,13 @@ textarea.form-control {
   border-radius: 5px;
 }
 
+/* Footer */
+.footer {
+  background-color: #81a969;
+  opacity: 95%;
+  padding: 0.5rem;
+  color: #f8f9f0;
+}
 /* .App {
   text-align: center;
 }
