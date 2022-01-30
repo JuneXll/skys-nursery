@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import ContactForm from '../widgets/ContactForm';
-// import Footer from '../Footer';
+import Footer from '../Footer';
 
 const plantsImg = 'https://ik.imagekit.io/diversifiedtax/Sky_s_Nursery/MainPlantLineUp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643405213237'
 
 const Contact = () => {
     return (
-        <div id="contact-us" className='contact-div cover-container d-flex flex-column justify-content-around align-items-center'>
+        <div id="contact-us" >
+            <div className='contact-div cover-container d-flex flex-column justify-content-around align-items-center'>
             {/* Contact us form */}
             <Container className="row">
                 {/* Contact info */}
@@ -31,6 +32,8 @@ const Contact = () => {
                     <ContactForm/>
                 </Container>
             </Container>
+        </div>
+        <Footer/>
         </div>
     )
 }

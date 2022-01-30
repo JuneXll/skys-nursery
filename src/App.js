@@ -20,7 +20,7 @@ function App() {
           <Inventory/>
           <Delivery/>
           <Contact/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
