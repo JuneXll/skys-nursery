@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import ContactForm from '../widgets/ContactForm';
 import Footer from '../Footer';
 
-const plantsImg = 'https://ik.imagekit.io/diversifiedtax/Sky_s_Nursery/MainPlantLineUp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643405213237'
+const plantsImg = 'https://ik.imagekit.io/junexll/Skys_nursery/MainPlantLineUp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643577379733'
 
 const Contact = () => {
     return (

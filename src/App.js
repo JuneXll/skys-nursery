@@ -8,7 +8,6 @@ import Inventory from './components/sections/Inventory';
 import Delivery from './components/sections/Delivery';
 import Contact from './components/sections/Contact';
 import Navigation from './components/Navigation';
-import Footer from './components/Footer';
 // import NotFound from './components/sections/NotFound';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
           <Inventory/>
           <Delivery/>
           <Contact/>
-      {/* <Footer/> */}
     </div>
   );
 }

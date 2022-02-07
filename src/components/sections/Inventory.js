@@ -1,7 +1,16 @@
 import React from 'react';
-// import { Container, Table } from 'react-bootstrap';
+import inventoryList from '../../inventoryData/inventoryList';
 
-const Inventory = () => {
+const Inventory = (props) => {
+
+    const renderPlant = (plant) => {
+        return (
+            <tr>
+                <td>{plant.plantName}</td>
+                <td>{plant.plantSize}</td>
+            </tr>
+        )
+    }
     return(
         <div id="inventory" className='inventory-div cover-container d-flex flex-column justify-content-center align-items-center align-content-center'>
             <h1 className='pb-5'>Inventory</h1>
@@ -15,27 +24,17 @@ const Inventory = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Plant Name</td>
-                            <td>Size</td>
+                            <th colspan="3" class="table-active">Flowers</th>
+                        </tr>
+                        {inventoryList.plantName === 'flower' && inventoryList.available === true ? 
+                        (inventoryList.map(renderPlant)) : console.log("oops something went wrong") }
+                        <tr>
+                            <td>
+                                {inventoryList.plantName}
+                            </td>
                         </tr>
                         <tr>
-                            <td>Plant Name</td>
-                            <td>Size</td>
-                        </tr>
-                        <tr>
-                            <td>Plant Name</td>
-                            <td>Size</td>
-                        </tr>
-                        <tr>
-                            <td>Plant Name</td>
-                            <td>Size</td>
-                        </tr>
-                        <tr>
-                            <th colspan="3" class="table-active">Hedges</th>
-                        </tr>
-                        <tr>
-                            <td>Plant Name</td>
-                            <td>Size</td>
+                            <th colspan="3" class="table-active">Palms</th>
                         </tr>
                         <tr>
                             <td>Plant Name</td>
@@ -52,6 +51,13 @@ const Inventory = () => {
                         <tr>
                             <td>Plant Name</td>
                             <td>Size</td>
+                        </tr>
+                        <tr>
+                            <td>Plant Name</td>
+                            <td>Size</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3" class="table-active">Shrubs</th>
                         </tr>
                         <tr>
                             <td>Plant Name</td>

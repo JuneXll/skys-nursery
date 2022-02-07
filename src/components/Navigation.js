@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-const logo = 'https://ik.imagekit.io/diversifiedtax/Sky_s_Nursery/EggwhiteT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642455514118'
+const logo = 'https://ik.imagekit.io/junexll/Skys_nursery/EggwhiteT.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643577386918'
 
 const languages = [
     {

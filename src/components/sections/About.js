@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Table } from 'react-bootstrap'
 
-const iconImg = 'https://ik.imagekit.io/diversifiedtax/Sky_s_Nursery/CirclePlant.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642450038427'
+const iconImg = 'https://ik.imagekit.io/junexll/Skys_nursery/CirclePlant.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643577365435'
 
 const About = () => {
     return(
